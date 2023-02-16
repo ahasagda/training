@@ -8,6 +8,7 @@
         <collectiontype code="GenderList" elementtype="Gender" autocreate="true" generate="true" type="list"/>
         <collectiontype code="SwatchColorSet" elementtype="SwatchColorEnum" autocreate="true" generate="true"
                         type="set"/>
+        <collectiontype code="AltDesc" elementtype="java.lang.string" autocreate="true" generate="true" type="list"/>
     </collectiontypes>
 
     <enumtypes>
@@ -26,7 +27,12 @@
             <value code="YELLOW"/>
         </enumtype>
     </enumtypes>
-
+    <relations>
+        <relation code="BrandCodeDescription2Apparel Product" autocreate="true" localized="false">
+            <sourceElement type="Apparel Product" qualifier="products" cardinality="many" collectiontype="list"/>
+            <targetElement type="BrandCodeDescription" qualifier="codeDesc" cardinality="one"/>
+        </relation>
+    </relations>
     <itemtypes>
 
         <!-- Add your item definitions here -->
@@ -47,7 +53,28 @@
                     </attribute>
                 </attributes>
             </itemtype>
-
+            <!-- Ben ekledim -->
+            <itemtype code="BrandCodeDescription" autocreate="true" generate="true"> <deployment table="BrandCodeDescription" typecode="11000" />
+            <attributes>
+            <attribute qualifier="code" type="java.lang.String">
+                <description>
+                We expect an attribute in the BrandCodeDescription table.
+                By attribute string </description>
+                <modifiers search="true" unique="true"/>
+                <persistence type="property" /> </attribute>
+                <!-- kan grubu için -->
+                <attribute qualifier="bloodGroup" type="java.lang.String">
+                    <persistence type="property"/>
+                    <description>Blood Group of the user</description>
+                    <modifiers optional="true" unique="false" read="true" write="true" search="true"/>
+                </attribute>
+                <attribute qualifier="altDesc" type="AltDesc">
+                    <modifiers optional="true"/>
+                    <persistence type="property"/>
+                </attribute>
+            </attributes>
+                <!-- Ben ekledim -->
+            </itemtype>
             <itemtype code="ApparelStyleVariantProduct" extends="VariantProduct"
                       autocreate="true" generate="true"
                       jaloclass="de.hybris.training.core.jalo.ApparelStyleVariantProduct">

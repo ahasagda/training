@@ -11,6 +11,42 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/test/process/consignment-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/process/consignment-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/integration/hot-folder-common-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/integration/hot-folder-store-apparel-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/integration/hot-folder-store-electronics-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/multi-step-checkout-config.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/test/process/order-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/process/order-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-buyer-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-expired-email-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-post-cancellation-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-salesrep-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-seller-approval-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore/processes/quote/quote-to-expire-soon-email-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/process/return-process-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/spring-cms-config.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/spring-filter-config.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/spring-mvc-config.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/spring-security-config.xml</file>
+          <file>file://$MODULE_DIR$/trainingbackoffice/resources/trainingbackoffice-backoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingbackoffice/resources/trainingbackoffice-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingcore/resources/trainingcore-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingfacades/resources/trainingfacades-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/test/trainingfulfilmentprocess-spring-test-fraudcheck.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/test/trainingfulfilmentprocess-spring-test.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess/test/trainingfulfilmentprocess-spring-testcleanup.xml</file>
+          <file>file://$MODULE_DIR$/trainingfulfilmentprocess/resources/trainingfulfilmentprocess-spring.xml</file>
+          <file>file://$MODULE_DIR$/traininginitialdata/resources/traininginitialdata-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingtest/resources/trainingtest-spring.xml</file>
+          <file>file://$MODULE_DIR$/trainingstorefront/web/webroot/WEB-INF/config/web-application-config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />

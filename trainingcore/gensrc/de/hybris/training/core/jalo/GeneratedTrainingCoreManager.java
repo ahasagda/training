@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Feb 16, 2023, 2:27:22 AM                    ---
+ * --- Generated at Feb 16, 2023, 3:22:33 PM                    ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved.
@@ -20,6 +20,7 @@ import de.hybris.training.core.constants.TrainingCoreConstants;
 import de.hybris.training.core.jalo.ApparelProduct;
 import de.hybris.training.core.jalo.ApparelSizeVariantProduct;
 import de.hybris.training.core.jalo.ApparelStyleVariantProduct;
+import de.hybris.training.core.jalo.BrandCodeDescription;
 import de.hybris.training.core.jalo.ElectronicsColorVariantProduct;
 import java.util.HashMap;
 import java.util.Map;
@@ -124,6 +125,32 @@ public abstract class GeneratedTrainingCoreManager extends Extension
 	public ApparelStyleVariantProduct createApparelStyleVariantProduct(final Map attributeValues)
 	{
 		return createApparelStyleVariantProduct( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public BrandCodeDescription createBrandCodeDescription(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType( TrainingCoreConstants.TC.BRANDCODEDESCRIPTION );
+			return (BrandCodeDescription)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating BrandCodeDescription : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public BrandCodeDescription createBrandCodeDescription(final Map attributeValues)
+	{
+		return createBrandCodeDescription( getSession().getSessionContext(), attributeValues );
 	}
 	
 	public ElectronicsColorVariantProduct createElectronicsColorVariantProduct(final SessionContext ctx, final Map attributeValues)
